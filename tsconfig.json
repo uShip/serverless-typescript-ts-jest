@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "allowJs": true,
+        "checkJs": false,
+        "esModuleInterop": true,
+        "downlevelIteration": true,
+        "lib": ["esnext", "dom"],
+        "module": "commonjs",
+        "noUnusedLocals": true,
+        "outDir": ".lib",
+        "skipLibCheck": true,
+        "strict": true,
+        "target": "esnext",
+        "moduleResolution": "node"
+    },
+    "exclude": ["node_modules"]
+}

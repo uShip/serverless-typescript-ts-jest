@@ -1,0 +1,6 @@
+/.webpack
+webpack.config.js
+src/__tests__/**
+node_modules
+canary
+*test.ts
