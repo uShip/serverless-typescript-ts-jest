@@ -18,13 +18,18 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Debug Tests",
-            "preLaunchTask": "build",
+            "name": "Debug All Tests",
             "program": "${workspaceRoot}\\node_modules\\jest\\bin\\jest.js",
-            "args": ["--config", "${workspaceRoot}\\config\\jest.debug.json", "--runInBand"],
-            "sourceMaps": true,
-            "outFiles": ["${workspaceRoot}/debug/**/*"],
-            "postDebugTask": "rimraf"
+            "args": ["--runInBand", "--no-cache", "--coverage", "false"],
+            "sourceMaps": true
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Current Test",
+            "program": "${workspaceRoot}\\node_modules\\jest\\bin\\jest.js",
+            "args": ["${fileBasenameNoExtension}", "--runInBand", "--no-cache", "--coverage", "false"],
+            "sourceMaps": true
         }
     ]
 }

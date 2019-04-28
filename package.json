@@ -4,7 +4,6 @@
     "description": "Serverless webpack example using Typescript",
     "main": "",
     "scripts": {
-        "build:debug": "tsc -p ./config/tsconfig.debug.json --pretty",
         "test": "jest --colors --detectOpenHandles --coverage",
         "test:watch": "jest --watch",
         "lint": "tsc -noemit && eslint . --fix --ext .ts,.tsx",

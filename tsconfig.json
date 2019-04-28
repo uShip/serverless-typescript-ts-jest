@@ -12,7 +12,8 @@
         "skipLibCheck": true,
         "strict": true,
         "target": "esnext",
+        "mapRoot": "./.lib/",
         "moduleResolution": "node"
     },
-    "exclude": ["node_modules"]
+    "exclude": ["node_modules", "*.test.ts"]
 }
